@@ -9,6 +9,14 @@
     }
 }
 
+.section {
+    background-color: #14161a;
+}
+
+.hero.is-primary {
+    background-color: #14161a;
+}
+
 .header-hero {
     background-image: url("images/mountains.jpg");
     background-repeat: no-repeat; /* Prevents image from repeating */
