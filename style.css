@@ -1,69 +1,72 @@
-@font-face {
-    font-family: 'roboto';
-    src: URL('font/Roboto/Roboto-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-bombay-white: #b1b5bb;
+        --color-shark-black: #212428;
+        --color-trout-grey: #4e5560;
+        --color-scarpa-purple: #5c5460;
+
+        
+    }
 }
 
-@font-face {
-    font-family: 'roboto';
-    src: URL('font/Roboto/Roboto-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
+.header-hero {
+    background-image: url("images/mountains.jpg");
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center; /* Centers the image within the div */
 }
 
-@font-face {
-    font-family: 'roboto';
-    src: URL('font/Roboto/Roboto-Italic.ttf');
-    font-weight: normal;
-    font-style: italic;
+.navbar-link, a.navbar-item.is-active {
+    background-color: #4e5560;
+    color: #b1b5bb;
 }
 
-@font-face {
-    font-family: 'roboto';
-    src: URL('font/Roboto/Roboto-BoldItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
+.navbar-link, a.navbar-item:hover {
+    background-color: #212428;
+    color: #b1b5bb;
 }
 
-body {
-    color: #212121;
-    background-color: #9370DB;
-    font-family: roboto, Calibri, Tahoma, sans-serif;
+.purple-bg {
+    background-color: #5c5460;
 }
 
-main, header {
-    width: 90%;
-    background-color: #FAF0E6;
-    margin: 0 auto;
-    padding: 15px 15px;
+.alt-black {
+    background-color: #212428;
 }
 
-header {
-    text-align: center;
+.service-section {
+    padding: 0 !important;
 }
 
-a {
-    color: #9370DB;
-}
-a:hover {
-    opacity: 0.8;
-}
-
-.purple {
-    color: #663399;
+.service-grid {
+    margin-bottom:0 !important;
+    --bulma-grid-gap: 0 !important;
+    column-gap:0;
+    gap:0;
 }
 
-header > section {
-    display:inline-block;
+.cell.service-block {
+    height:450px;
+    margin-bottom:0;
 }
 
-.project-images {
-    text-align:center;
+.cell.service-block .level-item {
+    flex-shrink:unset !important;
 }
 
-.project-images img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom:15px;
+.grs-section {
+    background-color: #5c6b28;
+}
+
+.footer-hero {
+    background-image: url("images/mountains2.jpg");
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center; /* Centers the image within the div */
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: #b1b5bb;
+    }
 }

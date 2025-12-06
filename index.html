@@ -1,12 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Dylan Nunns"/>
-        <meta name="description" content="Hello! I am a Software Developer. I have been programming for more than 10 year and have worked with many different languages and tech stacks." />
+        <meta name="description" content="Hello! I am a Software Developer. I have been programming for more than 10 years and have worked with many different languages and tech stacks." />
         <title>Dylan Nunns</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" href="./style.css" />
 
-        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="./script.js"></script>
 
         <!-- Cronitor RUM -->
         <script async src="https://rum.cronitor.io/script.js"></script>
@@ -16,182 +19,198 @@
         </script>
     </head>
     <body>
-        <header>
-            <section style="margin: 10px 10px;">
-                <img width="250px" src="images/dylan.jpg" />
-            </section>
-            <section>
-                <h1>Dylan Nunns</h1>
-                <p>London, Ontario, Canada</p>
-                <p>dylan.nunns@gmail.com</p>
-                <p><a target="_blank" href="https://github.com/gnarledrootsystems">GitHub</a> | 
-                    <a target="_blank" href="https://www.linkedin.com/in/dylannunns/">LinkedIn</a> | 
-                    <a target="_blank" href="https://www.goodreads.com/dylannunns">Goodreads</a>
-                </p>
-            </section>
-            <section style="margin: 10px 10px;">
-                <img width="250px" src="images/murphy.jpg" />
+        <header role="banner">
+            <section class="hero header-hero is-primary is-large">
+                <div class="hero-head">
+                    <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                        <div class="navbar-item">
+                            <p class="title">DYLAN NUNNS</p>
+                        </div>
+                        <span class="navbar-burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        </div>
+                        <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="https://github.com/gnarledrootsystems" target="_blank" class="navbar-item is-active">github</a>
+                            <a href="https://www.linkedin.com/in/dylannunns/" target="_blank" class="navbar-item">linkedin</a>
+                            <a href="https://gnarledrootsystems.com" target="_blank" class="navbar-item">freelance</a>
+                            <a href="mailto:dylan.nunns@gmail.com" target="_blank" class="navbar-item">email</a>
+                        </div>
+                        </div>
+                    </div>
+                    </nav>
+                </div>
+
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title is-1 header-body-outline">software<br/>developer</h1>
+                    </div>
+                </div>
             </section>
         </header>
+        <main role="main">
 
-        <main>
-            <article>
-                <p>Hello! Welcome to my slice of the interwebs. I develop software primarily to provide my dog, Murphy Jo, all the toys she deserves. My most recent experience is Python, FastAPI, AWS API, and Docker. In the past few years I worked with C#, .NET, and Azure. I like to explore and work in different technologies. Throughout my career I have done Backend, Native Mobile (iOS & Android), Web, and Internal Tools, and Desktop Software.</p>
-                <p>Outside of work I enjoy reading and learning, drawing, and spending most of my time with my dog.</p>
-                <p>My current reading list is surrounding Cryptography and it's history, and current applications, and (trying) to understand the math behind it. I am currently reading: The Code Book by Simon Singh.</p>
-            </article>
+            <section class="section">
+                <div class="container">
+                    <h1 class="title has-text-white-ter">My Professional Coder Stats</h1>
+                    <h2 class="subtitle has-text-grey-lighter">99.999% Accuracy Guaranteed</h2>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading has-text-grey-lighter">Lines of Code Written</p>
+                                <p id="code-written has-text-white-ter" class="title">12,382,917</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading has-text-grey-lighter">Lines of Code Deleted</p>
+                                <p class="title has-text-white-ter">48,152,340</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                            <p class="heading has-text-grey-lighter">Crashed Production</p>
+                            <p class="title has-text-white-ter">27</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                            <p class="heading has-text-grey-lighter">rm -rf /</p>
+                            <p class="title has-text-white-ter">6</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
 
-            <article>
-                <h2 class="purple">Personal Projects</h2>
-                <hr />
-                <section>
-                    <p>I'm building random things for fun. Check back occasionally!</p>
-                </section>
-                <section>
-                    <h3>[2025 - November] No Auth Reddit Page Post Scraper</h3>
-                    <blockquote>
-                        <p>A tool to collect the last 1000 posts on a Reddit page directly from {page}/.json. No Authentication Required.</p>
-                        <p>The project is setup to store them in MongoDB, but you could modify it to simply retrieve the raw json files.</p>
-                        <p>Built using: <b>Python</b>, <b>Docker</b>, <b>MongoDB</b></p>
-                        <p><a target="_blank" href="https://github.com/gnarledrootsystems/reddit-data">[reddit-data] Github Repo</a></p>
-                        <section class="project-images">
-                            <img src="images/reddit_data.png" />
-                            <img src="images/reddit_data_retry.png" />
-                        </section>
-                    </blockquote>
-                </section>
-                <section>
-                    <h3>[2025 - November] CalMe</h3>
-                    <blockquote>
-                        <p>A tool to quickly create events on your Google Calendar from the terminal.</p>
-                        <p>Built using: <b>Python</b></p>
-                        <p><a target="_blank" href="https://github.com/gnarledrootsystems/calme">[calme] Github Repo</a></p>
-                        <section class="project-images">
-                            <img src="images/calme.png" />
-                        </section>
-                    </blockquote>
-                </section>
-                <section>
-                    <h3>[2023] [Defunct] OneDay - iOS & Android App</h3>
-                    <blockquote>
-                        <p>OneDay is a 24 Hour Visualization App. It was designed to aid with Time Blindness by allowing you to view and track your day by the hour.</p>
-                        <p>Built using: <b>Kotlin</b>, <b>Swift</b>, and <b>SQLite</b>. I built each platform app as its own individual project and codebase.</p>
-                        <p>Though the app no longer exists, you can view marketing about it on Instagram: <a target="_blank" href="https://www.instagram.com/p/ChZ0kCpubDB/">OneDay Instagram</a></p>
-                        <p><a target="_blank" href="https://github.com/gnarledrootsystems/OneDay.Android">[OneDay] Android Github Repo</a></p>
-                        <p><a target="_blank" href="https://github.com/gnarledrootsystems/OneDay.iOS">[OneDay] iOS Github Repo</a></p>
-                    </blockquote>
-                </section>
-                <section>
-                    <h3>[2022] idmod</h3>
-                    <blockquote>
-                        <p>A very simple tool built using Go to take string access permissions mode (<b>drwxr-xr-x</b>) to the numerical value (<b>755</b>) for use with chmod.</p>
-                        <p>Built using: <b>Go</b></p>
-                        <p><a target="_blank" href="https://github.com/gnarledrootsystems/idmod">[idmod] Github Repo</a></p>
-                    </blockquote>
-                </section>
-            </article>
+            <section class="section">
+                <div class="container">
+                    <h1 class="title has-text-white-ter">Busy working on...</h1>
+                    <h2 class="subtitle has-text-grey-lighter">Debugging Production Issues</h2>
+                    <progress class="progress is-medium is-danger" max="100">45%</progress>
+                </div>
+            </section>
 
-            <article>
-                <h2 class="purple">Work Experience</h2>
-                <hr/>
-                <section>
-                    <p><b>Senior Backend Developer</b> &#64; Mad Hatter Tech</p>
-                    <p><small>Jul 2025 - Nov 2025</small></p>
-                    <ul>
-                        <li><small>Developing microservices using Python, FastAPI, and Docker</small></li>
-                        <li><small>Developing websites using Drupal</small></li>
-                        <li><small>Python, FastAPI, Drupal, Docker, AWS API, AWS</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Senior Software Engineer</b> &#64; Carebook Technologies Inc</p>
-                    <p><small>May 2023 - Aug 2025</small></p>
-                    <ul>
-                        <li><small>Building new features and handling issues across our multiple environments.</small></li>
-                        <li><small>Handling production issues relating to Kubernetes services and the back-end platforms.</small></li>
-                        <li><small>Creating internal tooling using C#, .NET, and Powershell Script.</small></li>
-                        <li><small>Azure, Kubernetes, Docker, C#, .NET Framework, SQL, React.js, TypeScript</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Senior Software Engineer</b> &#64; Cannametrics</p>
-                    <p><small>Nov 2022 - Mar 2023</small></p>
-                    <ul>
-                        <li><small>Building Data Visualization into the platform using Chart.js to allow users a better way to view their data.</small></li>
-                        <li><small>Integrating the Product Matching Process into a Machine Learning service.</small></li>
-                        <li><small>AngularJS, TypeScript, Microsoft Azure, C#, .NET Framework, SQL</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Software Developer</b> &#64; EventConnect</p>
-                    <p><small>Mar 2021 - Nov 2022</small></p>
-                    <ul>
-                        <li><small>Created and maintained an Internal Tool, built using Go and Bash, used to download and import production databases for use with local development. This tool would scrub any personal and private data from the database upon request for download.</small></li>
-                        <li><small>Managed the Development Environment experience for the Dev team by integrating Docker for the dev platform.</small></li>
-                        <li><small>Go, Bash, MySQL, Docker, Laravel, Rackspace</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Freelance</b> &#64; Gnarled Root Systems</p>
-                    <p><small>Dec 2018 - Present</small></p>
-                    <ul>
-                        <li><small>C#, .Net-Core, ASP.Net, JavaScript, Bash, PowerShell, Python, Laravel, PHP, Symfony, MySQL, WordPress, SSO Integrations, Okta, Azure, Digital Ocean</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Internal Tools Engineer</b> &#64; BriteCore</p>
-                    <p><small>Jan 2019 - Dec 2019</small></p>
-                    <ul>
-                        <li><small>Python, Bash, MySQL, Docker, Laravel, AWS</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>WordPress Developer / Operations</b> &#64; tbk Creative</p>
-                    <p><small>Jan 2017 - Nov 2018</small></p>
-                    <ul>
-                        <li><small>WordPress, PHP, Mysql, AWS, Jenkins, Gitlab CI</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Backend Developer</b> &#64; RaceRoster</p>
-                    <p><small>Jun 2016 - Jan 2017</small></p>
-                    <ul>
-                        <li><small>PHP, Mysql, Symfony, Python</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Software Developer</b> &#64; 787 Networks</p>
-                    <p><small>Sep 2015 - Jun 2016</small></p>
-                    <ul>
-                        <li><small>C++, DirectX, Chromium Embedded Framework, C#, WPF, Swift, Obj-C</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>iOS Developer</b> &#64; Arcane</p>
-                    <p><small>Feb 2015 - Sep 2015</small></p>
-                    <ul>
-                        <li><small>Swift, Obj-C, iOS</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Web Developer</b> &#64; rTraction</p>
-                    <p><small>Dec 2013 - Jan 2015</small></p>
-                    <ul>
-                        <li><small>WordPress, Drupal, CodeIngiter, Laravel, MySQL, PHP</small></li>
-                    </ul>
-                </section>
-                <section>
-                    <p><b>Developer Internships</b> &#64; rTraction, Digital Echidna</p>
-                    <p><small>2012 - 2013</small></p>
-                    <ul>
-                        <li><small>WordPress, Drupal, CodeIngiter, Laravel, MySQL, PHP</small></li>
-                    </ul>
-                </section>
-            </article>
+            <section class="section purple-bg">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="has-text-white-ter">Welcome, friend!</h1>
+                        <p class="has-text-white-ter">Hello! Welcome to my slice of the interwebs. I develop software primarily to provide my dog, Murphy Jo, all the toys she deserves.</p>
+                        <p class="has-text-white-ter">Over my 12 years of experience I have dipped my toes in Desktop Software, Website and Web Applications, Native Mobile (iOS & Android), APIs, Internal Tools, and DevOps. My most recent experience is with Python and using it with FastAPI, Flask, AWS API, MongoDB, and Docker. In the past few years I worked with C#, .NET, and Azure.</p>
+                        <p class="has-text-white-ter">Outside of programming I enjoy reading and learning, exploring, and spending most of my time with my dog.</p>
+                        <p class="has-text-white-ter">My current reading list is surrounding Cryptography and it's history, and current applications, and (trying) to understand the math behind it. I am currently reading: The Code Book by Simon Singh.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section purple-bg">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column">
+                            <p class="image">
+                                <img alt="Dylan Nunns" src="./images/dylan.jpg" />
+                            </p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p class="image">
+                                <img alt="Dylan Nunns" src="./images/murphy.jpg" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section service-section">
+                    <div class="service-grid grid is-col-min-9">
+                        <div class="cell service-block level is-mobile">
+                            <div class="level-item has-text-centered has-text-light">
+                                <div class="p-3">
+                                    <h1 class="title has-text-white-ter">No Auth Reddit Page Post Scraper</h1>
+                                    <h2 class="subtitle has-text-grey-lighter">[2025 - November]</h2>
+                                    <p class="has-text-grey-lighter">A tool to collect the last 1000 posts on a Reddit page directly from {page}/.json. No Authentication Required.</p>
+                                    <p class="has-text-grey-lighter">The project is setup to store them in MongoDB, but you could modify it to simply retrieve the raw json files.</p>
+                                    <p class="has-text-grey-lighter">Built using: <b>Python</b>, <b>Docker</b>, <b>MongoDB</b></p>
+                                    <p class="has-text-grey-lighter"><a class="button mt-3" target="_blank" href="https://github.com/gnarledrootsystems/reddit-data">[reddit-data] Github Repo</a></p>
+                                    <img class="pt-5" width="75%" src="images/reddit_data.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell service-block level is-mobile alt-black">
+                            <div class="level-item has-text-centered">
+                                <div class="p-3">
+                                    <h1 class="title has-text-white-ter">CalMe</h1>
+                                    <h2 class="subtitle has-text-grey-lighter">[2025 - November]</h2>
+                                    <p class="has-text-grey-lighter">A tool to quickly create events on your Google Calendar from the terminal.</p>
+                                    <p class="has-text-grey-lighter">Built using: <b>Python</b></p>
+                                    <p class="has-text-grey-lighter"><a class="button mt-3" target="_blank" href="https://github.com/gnarledrootsystems/calme">[calme] Github Repo</a></p>
+                                    <img class="pt-5" width="75%" src="images/calme.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-grid grid is-col-min-9">
+                        <div class="cell service-block level is-mobile alt-black">
+                            <div class="level-item has-text-centered">
+                                <div class="p-3">
+                                    <h1 class="title has-text-white-ter">OneDay - iOS & Android App</h1>
+                                    <h2 class="subtitle has-text-grey-lighter">[2023]</h2>
+                                    <p class="has-text-grey-lighter">OneDay is a 24 Hour Visualization App. It was designed to aid with Time Blindness by allowing you to view and track your day by the hour.</p>
+                                    <p class="has-text-grey-lighter">Built using: <b>Kotlin</b>, <b>Swift</b>, and <b>SQLite</b>. I built each platform app as its own individual project and codebase.</p>
+                                    <p class="has-text-grey-lighter">Though the app no longer exists, you can view marketing about it on Instagram: <a target="_blank" href="https://www.instagram.com/p/ChZ0kCpubDB/">OneDay Instagram</a></p>
+                                    <p class="has-text-grey-lighter"><a class="button mt-3" target="_blank" href="https://github.com/gnarledrootsystems/OneDay.Android">[OneDay] Android Github Repo</a><a class="button mt-3" target="_blank" href="https://github.com/gnarledrootsystems/OneDay.iOS">[OneDay] iOS Github Repo</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell service-block level is-mobile">
+                            <div class="level-item has-text-centered">
+                                <div class="p-3">
+                                    <h1 class="title has-text-white-ter">idmod</h1>
+                                    <h2 class="subtitle has-text-grey-lighter">[2022]</h2>
+                                    <p class="has-text-grey-lighter">A very simple tool built using Go to take string access permissions mode (<b>drwxr-xr-x</b>) to the numerical value (<b>755</b>) for use with chmod.</p>
+                                    <p class="has-text-grey-lighter">Built using: <b>Go</b></p>
+                                    <p class="has-text-grey-lighter"><a class="button mt-3" target="_blank" href="https://github.com/gnarledrootsystems/idmod">[idmod] Github Repo</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="section grs-section">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is has-text-centered">
+                            <p class="image about-img">
+                                <a target="_blank" href="https://www.gnarledrootsystems.com"><img alt="Dylan Nunns" src="./images/GRS_Logo_NoName.png" /></a>
+                            </p>
+                        </div>
+                        <div class="column is-8 has-text-centered">
+                                <h1 class="title has-text-white-ter">
+                                    Gnarled Root Systems
+                                </h1>
+                                <h2 class="subtitle has-text-grey-lighter">
+                                    This is my business for Independent Contracting and Freelancing.
+                                </h2>
+                                <a class="button is-large" target="_blank" href="https://www.gnarledrootsystems.com">Check out the website</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer>
-
+        <footer role="contentinfo">
+            <section class="hero footer-hero is-primary is-large">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title is-1">Good bye!</h1>
+                    </div>
+                </div>
+            </section>
         </footer>
     </body>
 </html>
