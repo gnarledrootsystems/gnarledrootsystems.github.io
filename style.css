@@ -1,12 +1,61 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(./font/Orbitron-ExtraBold.ttf) format('truetype'),
+    url(../font/Orbitron-Regular.ttf) format('truetype');
+ }
+
+ @font-face {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-display: swap;
+    src: url(./font/Audiowide-Rgular.ttf) format('truetype');
+ }
+
+ @font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-display: swap;
+    src: url(./font/SpaceGrotesk-Regular.ttf) format('truetype');
+ }
+
+
 @media (prefers-color-scheme: light) {
     :root {
         --color-bombay-white: #b1b5bb;
         --color-shark-black: #212428;
         --color-trout-grey: #4e5560;
         --color-scarpa-purple: #5c5460;
-
-        
     }
+}
+
+body {
+    font-family: "Space Grotesk", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.orbitron-extrabold {
+    font-family: "Orbitron", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.orbitron-regular {
+    font-family: "Orbitron", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .section {
@@ -58,7 +107,7 @@
 }
 
 .cell.service-block {
-    height:450px;
+    height:500px;
     margin-bottom:0;
 }
 
