@@ -130,4 +130,24 @@ body {
     .navbar-menu {
         background-color: #b1b5bb;
     }
+
+    .service-block:nth-child(4n),
+    .service-block:nth-of-type(4n+1) {
+        background-color:#212428;
+    }
+
+    .service-block:nth-child(4n+3),
+    .service-block:nth-child(4n+2) {
+        background-color:#14161a;
+    }
+
+    .service-grid.grid.is-col-min-9 {
+        --bulma-grid-column-min: 33rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .service-grid.grid.is-col-min-9 {
+        --bulma-grid-column-min: 13.5rem;
+    }
 }
